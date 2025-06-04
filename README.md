@@ -40,9 +40,18 @@ Este proyecto es una aplicación fullstack que permite gestionar usuarios y role
 
 ### 1. Clonar el repositorio
 
-```bash
-git clone https://github.com/tuusuario/tu-repositorio.git
-cd tu-repositorio
+
+#backend
+cd backend
+npm install
+npm run dev
+#frontend
+cd frontend
+npm install
+npm run dev
+
+#🌐 API Endpoints
+
 | Método | Ruta         | Descripción               |
 | ------ | ------------ | ------------------------- |
 | GET    | `/api/roles` | Obtener lista de roles    |
@@ -50,6 +59,20 @@ cd tu-repositorio
 | GET    | `/api/users` | Obtener lista de usuarios |
 | POST   | `/api/users` | Crear un nuevo usuario    |
 
+#🛠️ Estructura del Código
+Backend (TypeScript + Express)
+
+/backend
+├── src/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   └── index.ts
+├── tsconfig.json
+└── package.json
+
+
+#Frontend (Vue + Vite)
 /frontend
 ├── src/
 │   ├── components/
